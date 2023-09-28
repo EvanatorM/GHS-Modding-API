@@ -14,24 +14,13 @@ namespace GHS_Modding_API.Objects
 
         public static List<IPlayerMovement> playerMovements = new();
 
-        #region Constructors
-
-        public Player() { }
-
-        public Player(float speed)
-        {
-            this.speed = speed;
-        }
-
-        #endregion
-
         #region Methods
 
         public void OnPlayerMove(Vector2 input)
         {
             foreach (IPlayerMovement move in playerMovements)
             {
-                velocity = move.OnMove(input, velocity));
+                velocity = move.OnMove(input, velocity);
             }
         }
 

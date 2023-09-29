@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GHS_Modding_API.Objects
 {
-    public class Player
+    public class MPlayer
     {
         private Vector3 velocity = Vector3.Zero;
 
